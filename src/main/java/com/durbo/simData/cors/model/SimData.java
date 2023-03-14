@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @lombok.Data
 @Entity(name = "datas")
-public abstract class Data {
+public abstract class SimData {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

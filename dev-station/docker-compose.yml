@@ -1,9 +1,12 @@
-version: "3.7"
+version: '3.1'
 services:
-
   db:
-    image: postgres
+    image: 'postgres:13.1-alpine'
     container_name: "local_postgres"
-    ports:
-      - "5432:5432"
     restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_DB=simdatabase
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=ThomVAT73200
